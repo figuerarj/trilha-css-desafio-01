@@ -27,11 +27,23 @@ header {
 }
 
 .banner {
-  background-image: url("/assets/images/banner.png"),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(49, 168, 221, 0) 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(/assets/images/banner.png);
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #33a8db;
+}
+
+.banner .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .2);
+  height: 260px;
+  width: 260px;
+  margin: auto;
+  border-radius: 50%;
+  /* padding: 16px;
+  margin-bottom: 16px; */
 }
 
 .banner-content {
@@ -45,6 +57,7 @@ header {
   font-weight: 900;
   line-height: normal;
   text-align: center;
+  text-transform: uppercase;
 
   background: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
   background-clip: text;
@@ -253,6 +266,8 @@ line-height: normal;
 }
 footer a{
   text-decoration: none;
+  font-weight: bold;
+  color: #33A8DB;
 }
 
 
